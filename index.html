@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#176b4d">
+<meta name="description" content="Equilibramente: educação, pesquisa e experiências digitais sobre saúde física e mental, com protagonismo juvenil.">
+<title>Equilibramente | Saúde em equilíbrio</title>
+<style>
+:root{--green:#176b4d;--green2:#23845f;--mint:#e8f5ee;--mint2:#f4faf6;--ink:#17352a;--muted:#60746a;--line:#dce9e0;--white:#fff;--gold:#e8bb62}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:#fff;line-height:1.6}a{color:inherit;text-decoration:none}button,input,textarea,select{font:inherit}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}.topline{background:var(--green);color:#e9fff1;font-size:.82rem;padding:8px 0}.topline .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}.header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:10px;font-weight:850;font-size:1.24rem;letter-spacing:-.04em}.logo{width:42px;height:42px;border-radius:14px;background:var(--green);color:white;display:grid;place-items:center;font-size:1.25rem}.brand span small{display:block;font-size:.65rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:700}.links{display:flex;align-items:center;gap:24px;font-size:.92rem;font-weight:650}.links a:hover{color:var(--green2)}.btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:999px;padding:12px 19px;background:var(--green);color:#fff;font-weight:750;cursor:pointer;transition:.2s}.btn:hover{background:#10543b;transform:translateY(-1px)}.btn.secondary{background:#fff;color:var(--green);border:1px solid var(--line)}.menu{display:none;background:white;border:1px solid var(--line);border-radius:12px;padding:8px 12px;color:var(--green);font-weight:700}.hero{padding:76px 0 62px;background:radial-gradient(ellipse at 85% 18%,#d9f0e2 0,transparent 34%),linear-gradient(180deg,#f8fcf9,#fff)}.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:54px;align-items:center}.eyebrow{display:inline-flex;gap:8px;align-items:center;background:var(--mint);color:var(--green);padding:7px 12px;border-radius:999px;font-weight:800;font-size:.78rem;letter-spacing:.04em;text-transform:uppercase}.dot{width:7px;height:7px;background:#35a76f;border-radius:50%}h1{font-size:clamp(2.7rem,5.4vw,4.7rem);line-height:1.03;letter-spacing:-.065em;margin:20px 0}h1 em{color:var(--green2);font-style:normal}.lead{font-size:1.12rem;color:var(--muted);max-width:590px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:27px}.note{font-size:.82rem;color:var(--muted);margin-top:18px}.visual{position:relative;min-height:390px;border-radius:30px;background:linear-gradient(145deg,#cdebd9,#edf8f0 56%,#a8d8bb);overflow:hidden;display:flex;align-items:center;justify-content:center}.visual:before,.visual:after{content:"";position:absolute;border-radius:50%;border:1px solid rgba(23,107,77,.17)}.visual:before{width:310px;height:310px}.visual:after{width:390px;height:390px}.orb{position:absolute;width:230px;height:230px;background:linear-gradient(145deg,#fff,#eaf6ee);border-radius:45% 55% 58% 42%;box-shadow:0 24px 70px #176b4d22;transform:rotate(-15deg)}.leaf{position:absolute;font-size:6rem;filter:drop-shadow(0 12px 10px #176b4d20)}.stat-card{position:absolute;z-index:2;background:#fff;border:1px solid #ffffffa8;border-radius:18px;padding:14px 17px;box-shadow:0 12px 30px #174e3020}.stat-card strong{display:block;font-size:1.18rem;color:var(--green)}.stat-card span{font-size:.78rem;color:var(--muted)}.stat-card.one{top:42px;left:25px}.stat-card.two{bottom:38px;right:20px}.section{padding:76px 0}.section.soft{background:var(--mint2)}.section-head{max-width:690px;margin-bottom:32px}.kicker{color:var(--green2);font-size:.78rem;text-transform:uppercase;letter-spacing:.14em;font-weight:850}.section h2{font-size:clamp(2rem,3.8vw,3rem);line-height:1.1;letter-spacing:-.05em;margin:10px 0 14px}.section-head p{color:var(--muted);margin:0}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{border:1px solid var(--line);border-radius:22px;padding:24px;background:#fff;box-shadow:0 8px 24px #174e3007}.iconbox{width:48px;height:48px;border-radius:15px;display:grid;place-items:center;background:var(--mint);font-size:1.4rem;margin-bottom:17px}.card h3{margin:0 0 8px;font-size:1.12rem;letter-spacing:-.025em}.card p{margin:0;color:var(--muted);font-size:.94rem}.card .arrow{display:inline-block;margin-top:17px;color:var(--green);font-weight:800;font-size:.9rem}.split{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}.quote-panel{background:var(--green);color:#fff;border-radius:28px;padding:32px;position:relative;overflow:hidden}.quote-panel:after{content:"";position:absolute;width:200px;height:200px;border:1px solid #ffffff30;border-radius:50%;right:-50px;bottom:-70px}.quote-panel h3{font-size:1.7rem;line-height:1.2;letter-spacing:-.04em;margin:0 0 16px}.quote-panel p{color:#d9eee2}.pillrow{display:flex;flex-wrap:wrap;gap:9px;margin-top:22px}.pill{background:#ffffff18;border:1px solid #ffffff36;border-radius:999px;padding:7px 11px;font-size:.82rem}.item-list{display:grid;gap:13px}.listitem{display:flex;gap:15px;padding:17px;border:1px solid var(--line);border-radius:17px}.listitem .iconbox{flex:0 0 44px;width:44px;height:44px;margin:0}.listitem h3{margin:0 0 3px;font-size:1rem}.listitem p{margin:0;color:var(--muted);font-size:.9rem}.tag{display:inline-block;font-size:.72rem;font-weight:800;color:var(--green);background:var(--mint);border-radius:7px;padding:3px 7px;margin-bottom:6px}.cta{padding:52px;border-radius:28px;background:linear-gradient(120deg,#e4f4e9,#f7fbf8);display:flex;justify-content:space-between;align-items:center;gap:28px}.cta h2{font-size:clamp(1.8rem,3.5vw,2.7rem);letter-spacing:-.05em;line-height:1.12;margin:8px 0}.cta p{color:var(--muted);max-width:570px;margin:0}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:grid;gap:6px}.field.full{grid-column:1/-1}.field label{font-size:.86rem;font-weight:750}.field input,.field select,.field textarea{width:100%;border:1px solid var(--line);border-radius:12px;padding:12px 13px;background:#fff;color:var(--ink)}.field textarea{min-height:110px;resize:vertical}.formhint{font-size:.82rem;color:var(--muted)}.footer{background:#102f23;color:#e6f4eb;padding:46px 0 24px}.footgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:34px}.footer p,.footer a{color:#b8d2c3;font-size:.9rem}.footer h4{margin:0 0 12px}.footer .brand small{color:#b8d2c3}.footlinks{display:grid;gap:8px}.copyright{border-top:1px solid #ffffff20;margin-top:30px;padding-top:18px;color:#9dbbaa;font-size:.8rem;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.toast{position:fixed;bottom:20px;left:50%;transform:translate(-50%,20px);opacity:0;pointer-events:none;background:#17352a;color:#fff;border-radius:12px;padding:12px 18px;box-shadow:0 12px 35px #0002;transition:.25s;z-index:99;max-width:calc(100% - 32px)}.toast.show{opacity:1;transform:translate(-50%,0)}.hidden{display:none!important}
+@media(max-width:850px){.links{gap:13px}.links a{font-size:.84rem}.hero-grid,.split{grid-template-columns:1fr;gap:30px}.visual{min-height:310px}.grid3{grid-template-columns:repeat(2,1fr)}.footgrid{grid-template-columns:1fr 1fr}.footgrid>div:first-child{grid-column:1/-1}.cta{padding:34px;align-items:flex-start;flex-direction:column}}
+@media(max-width:620px){.wrap{width:min(100% - 30px,1120px)}.topline .wrap{justify-content:center;text-align:center}.nav{min-height:66px}.menu{display:block}.links{display:none;position:absolute;top:65px;left:0;right:0;background:white;padding:16px 20px 22px;border-bottom:1px solid var(--line);box-shadow:0 12px 18px #17352a0c;flex-direction:column;align-items:stretch;gap:0}.links.open{display:flex}.links a{padding:11px 4px;font-size:1rem}.links .btn{margin-top:10px}.hero{padding:48px 0 40px}.hero-grid{gap:28px}h1{font-size:2.8rem}.lead{font-size:1rem}.visual{min-height:270px}.orb{width:170px;height:170px}.visual:before{width:230px;height:230px}.visual:after{width:290px;height:290px}.leaf{font-size:4.7rem}.stat-card{padding:10px 12px}.stat-card.one{top:24px;left:13px}.stat-card.two{bottom:20px;right:12px}.section{padding:55px 0}.grid3{grid-template-columns:1fr}.card{padding:21px}.split{gap:25px}.quote-panel{padding:25px}.cta{padding:26px}.formgrid{grid-template-columns:1fr}.field.full{grid-column:auto}.footgrid{grid-template-columns:1fr}.footgrid>div:first-child{grid-column:auto}.copyright{display:block}.copyright span{display:block;margin-top:8px}}
+</style>
+</head>
+<body>
+<div class="topline"><div class="wrap"><span>Conhecimento, cuidado e protagonismo juvenil</span><span>Saúde física • Saúde mental • Educação</span></div></div>
+<header class="header">
+  <div class="wrap nav">
+    <a class="brand" href="#inicio" aria-label="Equilibramente, página inicial"><span class="logo">e.</span><span>equilibramente<small>saúde em equilíbrio</small></span></a>
+    <button class="menu" id="menuBtn" aria-expanded="false" aria-label="Abrir menu">Menu ☰</button>
+    <nav class="links" id="navLinks" aria-label="Navegação principal">
+      <a href="#sobre">Sobre</a><a href="#pesquisa">Pesquisas</a><a href="#eventos">Eventos</a><a href="#conteudos">Conteúdos</a><a href="#parcerias">Parcerias</a>
+      <a class="btn" href="#contato">Fale conosco</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="hero" id="inicio">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow"><span class="dot"></span> Saúde com propósito</span>
+      <h1>Equilíbrio para viver <em>melhor.</em></h1>
+      <p class="lead">Somos uma iniciativa de protagonismo juvenil dedicada a aproximar as pessoas de informações, experiências e projetos sobre saúde física e mental.</p>
+      <div class="actions"><a class="btn" href="#projetos">Conheça nossos projetos ↗</a><a class="btn secondary" href="#sobre">Quem somos</a></div>
+      <p class="note">Informação acessível. Ciência responsável. Pessoas no centro.</p>
+    </div>
+    <div class="visual" aria-label="Ilustração abstrata em tons de verde">
+      <div class="orb"></div><div class="leaf">🌿</div>
+      <div class="stat-card one"><strong>Corpo + mente</strong><span>Uma visão integral da saúde</span></div>
+      <div class="stat-card two"><strong>Juventude ativa</strong><span>Ideias que viram iniciativas</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="sobre">
+  <div class="wrap split">
+    <div class="section-head">
+      <span class="kicker">Quem somos</span><h2>Saúde se constrói com informação e participação.</h2>
+      <p>A Equilibramente nasce da vontade de transformar curiosidade em conhecimento e conhecimento em ações que façam sentido para a vida cotidiana.</p>
+      <p style="margin-top:14px;color:var(--muted)">Nossa proposta é criar espaços de aprendizagem, divulgar pesquisas com responsabilidade e promover conversas acessíveis sobre bem-estar físico e mental.</p>
+    </div>
+    <div class="quote-panel">
+      <h3>Uma geração que não quer apenas falar sobre saúde. Quer participar da construção dela.</h3>
+      <p>Jovens aprendizes desenvolvendo projetos, compartilhando conhecimento e conectando pessoas a iniciativas relevantes.</p>
+      <div class="pillrow"><span class="pill">Educação</span><span class="pill">Pesquisa</span><span class="pill">Comunidade</span><span class="pill">Inovação</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section soft" id="projetos">
+  <div class="wrap">
+    <div class="section-head"><span class="kicker">O que fazemos</span><h2>Conhecimento que sai da tela e chega à vida.</h2><p>Frentes de atuação para aprender, compartilhar e desenvolver soluções em conjunto.</p></div>
+    <div class="grid3">
+      <article class="card"><div class="iconbox">⌕</div><h3>Pesquisa e dados</h3><p>Questionários, estudos exploratórios e relatórios que ajudam a compreender hábitos e desafios relacionados à saúde.</p><a class="arrow" href="#pesquisa">Explorar pesquisas ↗</a></article>
+      <article class="card"><div class="iconbox">◷</div><h3>Eventos digitais</h3><p>Conversas, oficinas e encontros on-line para aproximar o público de informações úteis e especialistas convidados.</p><a class="arrow" href="#eventos">Ver programação ↗</a></article>
+      <article class="card"><div class="iconbox">✳</div><h3>Educação em saúde</h3><p>Materiais e conteúdos acessíveis sobre movimento, descanso, hábitos e bem-estar, com atenção à qualidade das fontes.</p><a class="arrow" href="#conteudos">Acessar conteúdos ↗</a></article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="pesquisa">
+  <div class="wrap">
+    <div class="section-head"><span class="kicker">Departamento de Pesquisa</span><h2>Perguntas relevantes merecem respostas responsáveis.</h2><p>Esta área reunirá pesquisas, metodologias e relatórios da Equilibramente. Os exemplos abaixo são temas propostos, não estudos já realizados.</p></div>
+    <div class="grid3">
+      <article class="card"><span class="tag">Tema proposto</span><h3>Juventude e qualidade do sono</h3><p>Como os horários, a rotina de estudos e os hábitos digitais se relacionam com o descanso?</p><a class="arrow" href="#contato" data-topic="Pesquisa: juventude e sono">Tenho interesse ↗</a></article>
+      <article class="card"><span class="tag">Tema proposto</span><h3>Movimento no dia a dia</h3><p>Quais barreiras dificultam a prática de atividade física entre jovens e trabalhadores?</p><a class="arrow" href="#contato" data-topic="Pesquisa: atividade física">Tenho interesse ↗</a></article>
+      <article class="card"><span class="tag">Tema proposto</span><h3>Bem-estar na aprendizagem</h3><p>Quais fatores ajudam estudantes e aprendizes a manter uma rotina equilibrada?</p><a class="arrow" href="#contato" data-topic="Pesquisa: bem-estar na aprendizagem">Tenho interesse ↗</a></article>
+    </div>
+    <p class="formhint" style="margin-top:18px">Transparência: resultados só serão publicados após coleta, análise e revisão. Pesquisas com pessoas devem observar consentimento, privacidade e regras aplicáveis.</p>
+  </div>
+</section>
+
+<section class="section soft" id="eventos">
+  <div class="wrap">
+    <div class="section-head"><span class="kicker">Eventos e experiências</span><h2>Aprender junto muda a conversa.</h2><p>Encontros digitais para compartilhar conhecimento e criar espaço para perguntas.</p></div>
+    <div class="grid3">
+      <article class="card"><div class="iconbox">◉</div><span class="tag">Formato sugerido</span><h3>Conexão Saúde</h3><p>Uma conversa on-line sobre saúde física e mental com convidados e participação do público.</p><a class="arrow" href="#contato" data-topic="Evento: Conexão Saúde">Receber informações ↗</a></article>
+      <article class="card"><div class="iconbox">▤</div><span class="tag">Formato sugerido</span><h3>Oficinas de hábitos</h3><p>Encontros práticos sobre rotina, ergonomia, movimento e organização de hábitos saudáveis.</p><a class="arrow" href="#contato" data-topic="Evento: oficinas de hábitos">Receber informações ↗</a></article>
+      <article class="card"><div class="iconbox">◌</div><span class="tag">Formato sugerido</span><h3>Mesa-redonda jovem</h3><p>Jovens e convidados discutem desafios cotidianos com respeito, informação e mediação.</p><a class="arrow" href="#contato" data-topic="Evento: mesa-redonda jovem">Receber informações ↗</a></article>
+    </div>
+    <p class="formhint" style="margin-top:18px">A programação ainda será confirmada. Não há datas ou inscrições abertas nesta versão inicial.</p>
+  </div>
+</section>
+
+<section class="section" id="conteudos">
+  <div class="wrap">
+    <div class="section-head"><span class="kicker">Biblioteca de conteúdos</span><h2>Informação clara, sem promessas milagrosas.</h2><p>Uma área para artigos, guias e materiais educativos revisados antes da publicação.</p></div>
+    <div class="item-list">
+      <article class="listitem"><div class="iconbox">01</div><div><span class="tag">Guia em desenvolvimento</span><h3>Como construir uma rotina com mais movimento</h3><p>Ideias para incluir atividade física na rotina respeitando as condições de cada pessoa.</p></div></article>
+      <article class="listitem"><div class="iconbox">02</div><div><span class="tag">Artigo planejado</span><h3>Sono, descanso e aprendizagem</h3><p>O que fontes confiáveis dizem sobre descanso, atenção e rotina.</p></div></article>
+      <article class="listitem"><div class="iconbox">03</div><div><span class="tag">Material planejado</span><h3>Bem-estar mental: informação e caminhos de apoio</h3><p>Um conteúdo educativo sobre autocuidado, limites e como buscar apoio qualificado.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="section soft" id="parcerias">
+  <div class="wrap split">
+    <div class="section-head"><span class="kicker">Parcerias</span><h2>Boas iniciativas crescem em colaboração.</h2><p>Queremos dialogar com escolas, universidades, organizações, profissionais e empresas interessadas em educação e promoção da saúde.</p><div class="actions"><a class="btn" href="#contato" data-topic="Parcerias institucionais">Propor uma parceria ↗</a></div></div>
+    <div class="item-list">
+      <div class="listitem"><div class="iconbox">⌂</div><div><h3>Instituições de ensino</h3><p>Projetos educativos, rodas de conversa e pesquisas cuidadosamente planejadas.</p></div></div>
+      <div class="listitem"><div class="iconbox">＋</div><div><h3>Profissionais e especialistas</h3><p>Participação em eventos, revisão de materiais e divulgação responsável de conhecimento.</p></div></div>
+      <div class="listitem"><div class="iconbox">↗</div><div><h3>Empresas e apoiadores</h3><p>Patrocínio transparente e iniciativas de bem-estar com objetivos e resultados definidos.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contato">
+  <div class="wrap">
+    <div class="cta" style="margin-bottom:34px"><div><span class="kicker">Vamos conversar</span><h2>Uma ideia pode virar uma iniciativa.</h2><p>Envie uma mensagem para demonstrar interesse em pesquisas, eventos, conteúdos ou parcerias.</p></div><div style="font-size:3.4rem" aria-hidden="true">✉</div></div>
+    <div class="split" style="align-items:start">
+      <div><h2 style="font-size:1.8rem;letter-spacing:-.04em;margin-top:0">Entre em contato</h2><p style="color:var(--muted)">Este formulário abre seu aplicativo de e-mail com a mensagem preenchida. Nenhum dado é armazenado por este site.</p><p class="formhint">Antes de publicar, substitua o e-mail de exemplo no código pelo endereço oficial da Equilibramente.</p></div>
+      <form id="contactForm" class="formgrid">
+        <div class="field"><label for="name">Seu nome</label><input id="name" name="name" required placeholder="Como podemos chamar você?"></div>
+        <div class="field"><label for="email">Seu e-mail</label><input id="email" name="email" type="email" required placeholder="voce@exemplo.com"></div>
+        <div class="field full"><label for="subject">Assunto</label><select id="subject" name="subject"><option>Informações gerais</option><option>Pesquisa</option><option>Eventos</option><option>Conteúdos</option><option>Parcerias</option></select></div>
+        <div class="field full"><label for="message">Mensagem</label><textarea id="message" name="message" required placeholder="Escreva sua mensagem..."></textarea></div>
+        <div class="field full"><button class="btn" type="submit">Preparar e-mail ↗</button><span class="formhint">Não envie informações médicas ou dados sensíveis por este formulário.</span></div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <div class="footgrid">
+      <div><a class="brand" href="#inicio"><span class="logo">e.</span><span>equilibramente<small>saúde em equilíbrio</small></span></a><p>Educação, pesquisa e experiências digitais sobre saúde física e mental, com protagonismo juvenil.</p></div>
+      <div><h4>Explore</h4><div class="footlinks"><a href="#pesquisa">Pesquisas</a><a href="#eventos">Eventos</a><a href="#conteudos">Conteúdos</a><a href="#parcerias">Parcerias</a></div></div>
+      <div><h4>Nosso compromisso</h4><p>Informação responsável, transparência e respeito à privacidade. Conteúdos educativos não substituem avaliação ou orientação profissional individual.</p></div>
+    </div>
+    <div class="copyright"><span>© <span id="year"></span> Equilibramente. Todos os direitos reservados.</span><span>Versão inicial do portal • Atualize os conteúdos antes do lançamento.</span></div>
+  </div>
+</footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+const menuBtn=document.getElementById('menuBtn'), navLinks=document.getElementById('navLinks');
+menuBtn.addEventListener('click',()=>{const open=navLinks.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(open));menuBtn.textContent=open?'Fechar ×':'Menu ☰'});
+navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navLinks.classList.remove('open');menuBtn.setAttribute('aria-expanded','false');menuBtn.textContent='Menu ☰'}));
+document.getElementById('year').textContent=new Date().getFullYear();
+const toast=document.getElementById('toast');
+function showToast(msg){toast.textContent=msg;toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),3200)}
+document.querySelectorAll('[data-topic]').forEach(a=>a.addEventListener('click',()=>{const topic=a.getAttribute('data-topic');setTimeout(()=>{const subject=document.getElementById('subject');if(topic.toLowerCase().includes('pesquisa'))subject.value='Pesquisa';else if(topic.toLowerCase().includes('evento'))subject.value='Eventos';else if(topic.toLowerCase().includes('parceria'))subject.value='Parcerias';},100)}));
+document.getElementById('contactForm').addEventListener('submit',e=>{e.preventDefault();const d=new FormData(e.currentTarget);const body=`Nome: ${d.get('name')}%0D%0AE-mail: ${d.get('email')}%0D%0AAssunto: ${d.get('subject')}%0D%0A%0D%0A${encodeURIComponent(d.get('message'))}`;showToast('Abrindo seu aplicativo de e-mail…');setTimeout(()=>{window.location.href=`mailto:contato@equilibramente.org?subject=${encodeURIComponent('Contato pelo site Equilibramente: '+d.get('subject'))}&body=${body}`},450)});
+</script>
+</body>
+</html>
